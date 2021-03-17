@@ -26,20 +26,17 @@ public class Program {
 		for (int i = 0; i < line; i++) {
 			// Create numbers in each row
 			for (int j = i + 1; j > 0; j--) {
-				System.out.print(" " + str1);
+				System.out.print(str1 + " ");
 				// swapping strings
 				temp = str1;
 				str1 = str2;
 				str2 = temp;
 			}
-			// Create spaces in each row
-			for (int k = line - 1 - i; k > 0; k--) {
-				System.out.print(" ");
-			}
 			// End line
 			System.out.println();
-			// close scanner function/method
-			sc.close();
+
 		}
+		// close scanner function/method
+		sc.close();
 	}
 }
